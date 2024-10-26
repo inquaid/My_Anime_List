@@ -28,12 +28,12 @@ public class Main {
 
         System.out.println("\nFiltered by Genre (Action):");
         GenreFilter genreFilter = new GenreFilter("Action");
-        List<Anime> actionAnime = animeService.filetAnime(genreFilter);
+        List<Anime> actionAnime = animeService.filterAnime(genreFilter);
         displayService.display(actionAnime);
 
         System.out.println("\nFiltered by Rating (>= 9.0):");
         RatingFilter ratingFilter = new RatingFilter(9.0);
-        List<Anime> highRatedAnime = animeService.filetAnime(ratingFilter);
+        List<Anime> highRatedAnime = animeService.filterAnime(ratingFilter);
         displayService.display(highRatedAnime);
     }
 }

@@ -22,7 +22,7 @@ public class AnimeService {
         animeRepository.removeAnime(anime);
     }
 
-    public List<Anime> filetAnime(FilterStrategy filter) {
+    public List<Anime> filterAnime(FilterStrategy filter) {
         return filter.filter(animeRepository.listAllAnime());
     }
 
