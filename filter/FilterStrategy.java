@@ -15,5 +15,6 @@ public interface FilterStrategy {
      * @param animeList List of anime to be filtered
      * @return  Filtered list of anime
      */
+
     List<Anime> filter(List<Anime> animeList);
 }
